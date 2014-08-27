@@ -106,6 +106,7 @@ GLClient.controller('SubmissionCtrl',
                 headers: Authentication.headers(),
                 autoUpload: true,
                 maxFileSize: $scope.node.maximum_filesize * 1024 * 1024,
+                maxChunkSize: 1024 * 1024
               };
 
             });

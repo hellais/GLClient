@@ -577,7 +577,6 @@ angular.module('resourceServices', ['ngResource', 'resourceServices.authenticati
     return $resource('/admin/staticfiles');
 }]).
   factory('cookiesEnabled', function(){
-
   return function() {
 
     var enabled = false;

@@ -298,6 +298,7 @@ var GLClient = angular.module('GLClient', [
         }
     });
 
+    // XXX this is duplicated in app/scripts/services.js
     document.cookie = 'cookiesenabled=true;';
     if (document.cookie == "") {
       $rootScope.cookiesEnabled = false;
