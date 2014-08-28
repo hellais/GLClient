@@ -21,11 +21,7 @@ GLClient.controller('HomeCtrl', ['$scope', '$location', 'Node', 'Authentication'
       if (!$scope.anonymous && !$scope.node.tor2web_submission)
         return;
 
-      if ($scope.anonymous || $scope.answer.value == 'b') {
-        $location.path("/submission");
-      } else {
-        $scope.showQuestions = true;
-      }
+      $location.path("/submission");
 
     };
     
